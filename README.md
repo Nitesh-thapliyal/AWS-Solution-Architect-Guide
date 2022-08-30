@@ -1,11 +1,11 @@
 # AWS Solution Architect Exam
 
- Soon going to appear for AWS CSA Exam. It's time to revise the concepts and services of AWS. To maintain my consistency I will be sharing what I will learn daily in the twitter [threads](https://twitter.com/Bauddhik_Geek) and will maintain the README so that you guys can also learn from it✨
+ Soon going to appear for AWS CSA Exam. It's time to revise the concepts and services of AWS. To maintain my consistency I will be sharing what I will learn daily in the twitter [threads](https://twitter.com/Bauddhik_Geek) and will maintain the README so that you can also learn from it✨
 
 
 <hr>
-
-# EC2
+<details>
+ <summary> EC2 </summary>
 <hr>
 
 ## Before we start with EC2 lets discuss a basic:
@@ -25,3 +25,33 @@
 
 ### 2. Instance Type: 
 -  Various Configuration of CPU, memory , storage and networking capacity for your indtances is known as Istance type. 
+
+### 3. Key pairs:
+
+- Secure login information for your instance, AWS stores the public key and you store the private key in secure place. 
+
+### 4. Amazon EBS Volume:
+- Persistent storage volume for your data using Amazon Elastic Block Store 
+
+### 5. Instance Store Volume:
+- Storage Volume for temporary data that's deleted when you stop, hibernate or terminate your instance.
+
+### 6. Security Group:
+- A firewall that enables you to specify the protocol, ports and source IP ranges that can reach your instances using security group.
+
+### 7. Elastic IP:
+- Static IPV4 Address for dynamic cloud computing, known as Elastic IP addresses.
+
+### 8. EC2 Resources:
+- Metadata, known as tags, that you can create and assign to your EC2 resources.
+
+### 9. Region and Availability Zone:
+- Multiple physical locations for uoir resources such as Instance and Amazon EBS Volume known as Regions  and Availability Zone.
+
+### 10. Virtual Private Cloud(VPC):
+-  Virtual  Networks you can create that are logically isolated from the rest of the AWS cloud, and that can optionally connect to your own Network, known as VPC.  
+
+## Self Notes: 
+<img src="Notes/EC2.jpg">
+
+</details>
