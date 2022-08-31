@@ -102,12 +102,13 @@
 
 > If we want to provision instance we need to provide Security Group, it ios compulsory
 
+<div>
 ```mermaid
     flowchart LR
     OS --> PrivateIP
     OS --> PublicIP
 ```
-
+</div>
 ```mermaid
     flowchart LR
   
