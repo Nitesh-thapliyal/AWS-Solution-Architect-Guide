@@ -103,7 +103,7 @@ Here I share my daily learning, Hope you will get help from it. If you find this
 
 - After setting the rules only selected public IP will be allowed to connect
 
-> If we want to provision instance we need to provide Security Group, it ios compulsory
+> If we want to provision instance we need to provide Security Group, it is compulsory
 
 
 ```mermaid
