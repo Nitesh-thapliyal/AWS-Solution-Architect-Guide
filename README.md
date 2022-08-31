@@ -55,3 +55,30 @@
 <img src="Notes/EC2.jpg">
 
 </details>
+
+
+<hr>
+<details>
+ <summary> Security Group </summary>
+<hr>
+
+## What is Security Group?
+- A security group acts as virtual firewall for your EC2 instance to control incomming and outgoing trafffic.
+
+
+
+
+
+
+```squence
+--sequence-theme: hand
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
+
+
+
+```
+
+
+</details>
