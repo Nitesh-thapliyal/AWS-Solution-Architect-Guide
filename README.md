@@ -81,6 +81,7 @@
     User == N/w ==>OS  
 ```
 
+
 - If we want anyone from outside world to connect through network is by using the **Port number**
 
 - Thre traffic comming from outside the network is called **Ingress** or **Inbound traffic**
