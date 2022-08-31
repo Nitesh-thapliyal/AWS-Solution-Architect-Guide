@@ -1,7 +1,10 @@
-# AWS Solution Architect Exam
+# AWS Solution Architect 
 
- Soon going to appear for AWS CSA Exam. It's time to revise the concepts and services of AWS. To maintain my consistency I will be sharing what I will learn daily in the twitter [threads](https://twitter.com/Bauddhik_Geek) and will maintain the README so that you can also learn from it✨
+<img src = "Notes/aws-csa-associate.png">
 
+Learn **AWS** with me 🤝
+
+Here I share my daily learning, Hope you will get help from it. If you find this repo insightful then do give it a 🌟 , it will motivate me.  
 
 <hr>
 <details>
@@ -102,13 +105,12 @@
 
 > If we want to provision instance we need to provide Security Group, it ios compulsory
 
-<div>
+
 ```mermaid
     flowchart LR
     OS --> PrivateIP
     OS --> PublicIP
 ```
-</div>
 ```mermaid
     flowchart LR
   
