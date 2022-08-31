@@ -67,18 +67,14 @@
 
 
 
+</details>
 
-
-
-```squence
---sequence-theme: hand
-Alice->Bob: Hello Bob, how are you?
-Note right of Bob: Bob thinks
-Bob-->Alice: I am good thanks!
-
-
+```mermaid
+graph LR;
+    A--> B & C & D;
+    B--> A & E;
+    C--> A & E;
+    D--> A & E;
+    E--> B & C & D;
 
 ```
-
-
-</details>
