@@ -151,9 +151,45 @@ Here I share my daily learning, Hope you will get help from it. If you find this
 3. **File Storage**
 
 
+**Object Storage** :
+
+- To store the data peristent and if we don't want to install the OS then we use Object Storage. Example - Google Drive, DropBox
+
+In *AWS* we have a service that provides *Object Storage As A Service* and the name of that service is **S3(Simple Storage Service)** 
+
+**Block Storage** : 
+
+- Any storage device which is required to install the OS is known as Block Storage. Example- Hard Disk
+
+- In *AWS* we have a service that provide **Block Storage AS a Service** is **EBS(Elastic Block Store)**
+
+- EBS is a sub service of EC2
 
 
+**File Storage**:
 
+- [Comming Soon]
+
+### Note 
+- In AWS if we want to install any OS for that we require template which is called AMI and it is installed in **Block Device**
+
+- In AWS there are 3 types of Block device
+
+### Types of Block Device
+
+1. **Root Block Device**
+2. **Empherial Block Device**
+3. **Elastic Block Store**
+
+
+**Root Block Device**
+- The only way to install os is by using thre Root Block storage
+
+**EBS** : 
+- It's like an external storage which we can attach and deattach and os can be install in it.
+
+**Empheral Storage Device**
+- [Comming Soon]
 
 
 
