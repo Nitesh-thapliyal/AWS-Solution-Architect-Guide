@@ -133,9 +133,6 @@ Here I share my daily learning, Hope you will get help from it. If you find this
  <summary> Storage </summary>
 <hr>
 
-</details>
-
-
 ### What is Storage?
 
 - Storage is one kind of device use for storing data permanent(Persistent)
@@ -190,6 +187,9 @@ In *AWS* we have a service that provides *Object Storage As A Service* and the n
 
 **Empheral Storage Device**
 - [Comming Soon]
+</details>
+
+
 
 
 
