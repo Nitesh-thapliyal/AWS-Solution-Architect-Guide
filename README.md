@@ -126,8 +126,31 @@ Here I share my daily learning, Hope you will get help from it. If you find this
 
 - **Network Address Translation(NAT)** is a method of mapping an IP address space into another by modifying network address information in the IP header of packet while they are in transit accross the traffic routing device
 
+</details>
+
+<hr>
+<details>
+ <summary> Storage </summary>
+<hr>
 
 </details>
+
+
+### What is Storage?
+
+- Storage is one kind of device use for storing data permanent(Persistent)
+
+- Storage is divided into three parts depending upon what kind of data you want to store
+
+- If the kind of data changes then the type of store changes
+
+### Types of Storage:
+
+1. **Object Storage**
+2. **Block Storage**
+3. **File Storage**
+
+
 
 
 
