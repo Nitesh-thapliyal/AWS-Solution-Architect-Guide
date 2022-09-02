@@ -1,4 +1,4 @@
-# AWS Solution Architect    ![](https://visitor-badge.glitch.me/badge?page_id=Nitesh-thapliyal.Nitesh-thapliyal)
+# AWS Solution Architect    ![Visitor Count](https://profile-counter.glitch.me/{Nitesh-thapliyal}/count.svg)
 
 <img src = "Notes/aws-csa-associate.png">
 
