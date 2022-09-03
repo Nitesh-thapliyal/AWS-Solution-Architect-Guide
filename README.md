@@ -126,17 +126,17 @@ In AWS there are services that provice **Compute as a Service**:
 
 
 ### User Data:
-Allows you to enter commands that will run during the first boot cycle of the instance.
+- Allows you to enter commands that will run during the first boot cycle of the instance.
 
 
 ## Storage Option:
 - Selecting storage for your EC2 instance will depend on the instance selected, what you intend to use the instance for and how critical the data is
 
-- Persistent Storage (Permanent)
-Available by attaching EBS Volume
+> Persistent Storage (Permanent)
+- Available by attaching EBS Volume
 
-- Ephemeral Storage (Temporary)
-Created by EC2 instance using local storage
+> Ephemeral Storage (Temporary)
+- Created by EC2 instance using local storage
 
 ## Self Notes: 
 <img src="Notes/EC2.jpg">
