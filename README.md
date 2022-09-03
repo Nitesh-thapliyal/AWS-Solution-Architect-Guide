@@ -30,14 +30,14 @@ In AWS there are services that provice **Compute as a Service**:
 - Virtual Computing Environment is Known as Instance. 
 
 ### Instance Purchasing Options: 
-- On Demand Instance
-- Reserved Instance
-- Scheduled Instance
-- Spot Instance
-- On Demand Capacity Reservation
+1. On Demand Instance
+2. Reserved Instance
+3. Scheduled Instance
+4. Spot Instance
+5. On Demand Capacity Reservation
 
 
-### On Demand Instances: 
+>> On Demand Instances: 
 - Can be launched at any time
 - Can be used for as long as needed 
 - Flat rate determined on the instance type
@@ -45,7 +45,7 @@ In AWS there are services that provice **Compute as a Service**:
 - Best fit for testing and development environment
 
 
-### Reserved Instance:
+2.  Reserved Instance:
 - Purchase for a set of period of time for reduced cost
 
 ### Scheduled Instance:
