@@ -37,48 +37,47 @@ In AWS there are services that provice **Compute as a Service**:
 5. On Demand Capacity Reservation
 
 
->> On Demand Instances: 
+> On Demand Instances: 
 - Can be launched at any time
 - Can be used for as long as needed 
 - Flat rate determined on the instance type
 - Typical used for short term uses
 - Best fit for testing and development environment
 
-
-2.  Reserved Instance:
+> Reserved Instance:
 - Purchase for a set of period of time for reduced cost
 
-### Scheduled Instance:
+> Scheduled Instance:
 - You pay for the reservation on a recurring Schedule, either daily, weekly or monthly
 
-### Spot Instance
+> Spot Instance
 - Bid for a unused EC2 comuter resource
 - No guarantees for a fixed period of time
 - Fluctuation of price based on supply and demand
 - Purchase large EC2 instance at a very low price
 
-### On Demand Capacity Reservation:
+> On Demand Capacity Reservation:
 - Reserve capacity based on different attributes such as instance type, platform and tenancy within a particular Availability Zone for any period of time
 
 ### Tenancy:
 - This is related to what underlying host your EC2 instance will reside on, so essentially the physical server within an AWS Data Center
 
 ### Types of Tenancy:
-- Shared Tenancy
-- Dedicated Tenancy
-- Dedicated Hosts
+1. Shared Tenancy
+2. Dedicated Tenancy
+3. Dedicated Hosts
 
-### Shared Tenancy:
+> Shared Tenancy:
 - EC2 instance is launched on any available host with the required resources
 - The same host may be used by multiple customers
 - AWS Security mechanisms prevent on EC2 instance accessing another in the same host
 
-### Dedicated Instances:
+> Dedicated Instances:
 - Hosted on hardware that no other customer can access
 - May be required to meet compilance
 - Dedicated instance incur additional charges
 
-### Dedicated Hosts:
+> Dedicated Hosts:
 - Addional visibility and control on the physical host 
 - Allows to use the same host for a number of instances
 - May be required to meet compilance
