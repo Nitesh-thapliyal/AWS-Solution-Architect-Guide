@@ -1,4 +1,4 @@
-## AWS Solution Architect         &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;![visitor badge](https://visitor-badge.glitch.me/badge?page_id=Nitesh.visitor-badge&left_text=Visitors)
+## AWS Solution Architect         &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; ![visitor badge](https://visitor-badge.glitch.me/badge?page_id=Nitesh.visitor-badge&left_text=Visitors)
 
 <img src = "Notes/aws-csa-associate.png">
 
@@ -8,15 +8,81 @@ Here I share my daily learning, Hope you will get help from it. If you find this
 
 <hr>
 <details>
- <summary> EC2 </summary>
+ <summary>Compute</summary>
 <hr>
+
+- Comoute resources can be consider the brains and processing power required by applications and systems to cary out computational tasks via a series of instructions.
+
+- It is closely related to common server component such as **RAM** and **CPU**
+
+In AWS there are services that provice **Compute as a Service**: 
+
+<details>
+<summary>1. EC2</Summary>
 
 ## Before we start with EC2 lets discuss a basic:
 
 -  If we want to run any program, we need OS and in order to perform any task on OS we need Memory / CPU and Storage. The OS which has Basically Memory / CPU and Storage is called System but in AWS these are called Instances, So
 
+### EC2:
+- It allows you to deploy virtual server within your AWS environment
+
 ### What are Instance?
 - Virtual Computing Environment is Known as Instance. 
+
+### Instance Purchasing Options: 
+- On Demand Instance
+- Reserved Instance
+- Scheduled Instance
+- Spot Instance
+- On Demand Capacity Reservation
+
+
+### On Demand Instances: 
+- Can be launched at any time
+- Can be used for as long as needed 
+- Flat rate determined on the instance type
+- Typical used for short term uses
+- Best fit for testing and development environment
+
+
+### Reserved Instance:
+- Purchase for a set of period of time for reduced cost
+
+### Scheduled Instance:
+- You pay for the reservation on a recurring Schedule, either daily, weekly or monthly
+
+### Spot Instance
+- Bid for a unused EC2 comuter resource
+- No guarantees for a fixed period of time
+- Fluctuation of price based on supply and demand
+- Purchase large EC2 instance at a very low price
+
+### On Demand Capacity Reservation:
+- Reserve capacity based on different attributes such as instance type, platform and tenancy within a particular Availability Zone for any period of time
+
+### Tenancy:
+- This is related to what underlying host your EC2 instance will reside on, so essentially the physical server within an AWS Data Center
+
+### Types of Tenancy:
+- Shared Tenancy
+- Dedicated Tenancy
+- Dedicated Hosts
+
+### Shared Tenancy:
+- EC2 instance is launched on any available host with the required resources
+- The same host may be used by multiple customers
+- AWS Security mechanisms prevent on EC2 instance accessing another in the same host
+
+### Dedicated Instances:
+- Hosted on hardware that no other customer can access
+- May be required to meet compilance
+- Dedicated instance incur additional charges
+
+### Dedicated Hosts:
+- Addional visibility and control on the physical host 
+- Allows to use the same host for a number of instances
+- May be required to meet compilance
 
 
 ## Features of EC2: 
@@ -25,6 +91,12 @@ Here I share my daily learning, Hope you will get help from it. If you find this
 ### 1. Amazon Machine Images(AMI):
 
 -  Pre configured Templates for your instances is known as Amazon Machine Image(AMI) 
+
+```mermaid
+  flowchart LR
+  AMI --> |Launch Instance| EC2_Instance
+  EC2_Instance --> |Install custom application| Customized_instance1
+```
 
 ### 2. Instance Type: 
 -  Various Configuration of CPU, memory , storage and networking capacity for your indtances is known as Istance type. 
@@ -54,8 +126,24 @@ Here I share my daily learning, Hope you will get help from it. If you find this
 ### 10. Virtual Private Cloud(VPC):
 -  Virtual  Networks you can create that are logically isolated from the rest of the AWS cloud, and that can optionally connect to your own Network, known as VPC.  
 
+
+### User Data:
+Allows you to enter commands that will run during the first boot cycle of the instance.
+
+
+## Storage Option:
+- Selecting storage for your EC2 instance will depend on the instance selected, what you intend to use the instance for and how critical the data is
+
+- Persistent Storage (Permanent)
+Available by attaching EBS Volume
+
+- Ephemeral Storage (Temporary)
+Created by EC2 instance using local storage
+
 ## Self Notes: 
 <img src="Notes/EC2.jpg">
+
+</details>
 
 </details>
 
