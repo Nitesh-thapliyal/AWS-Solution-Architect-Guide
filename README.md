@@ -1,5 +1,4 @@
-## AWS Solution Architect         &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; ![visitor badge](https://visitor-badge.glitch.me/badge?page_id=Nitesh.visitor-badge&left_text=Visitors)
-
+## AWS Solution Architect  
 <img src = "Notes/aws-csa-associate.png">
 
 Learn **AWS** with me 🤝
