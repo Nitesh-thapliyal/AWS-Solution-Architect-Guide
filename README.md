@@ -6,18 +6,16 @@ Learn **AWS** with me 🤝
 Here I share my daily learning, Hope you will get help from it. If you find this repo insightful then do give it a 🌟 , it will motivate me.  
 
 <hr>
-<details>
- <summary>Compute</summary>
+ <h1>Compute</h1>
 <hr>
 
 - Comoute resources can be consider the brains and processing power required by applications and systems to cary out computational tasks via a series of instructions.
 
 - It is closely related to common server component such as **RAM** and **CPU**
 
-In AWS there are services that provice **Compute as a Service**: 
 
 <details>
-<summary>1. EC2</Summary>
+<summary>EC2</Summary>
 
 ## Before we start with EC2 lets discuss a basic:
 
@@ -143,13 +141,12 @@ In AWS there are services that provice **Compute as a Service**:
 
 </details>
 
-</details>
 
 
-<hr>
+
 <details>
  <summary> Security Group </summary>
-<hr>
+
 
 ## What is Security Group?
 - A security group acts as virtual firewall for your EC2 instance to control incomming and outgoing trafffic.
@@ -214,10 +211,10 @@ In AWS there are services that provice **Compute as a Service**:
 
 </details>
 
-<hr>
+
 <details>
  <summary> Storage </summary>
-<hr>
+
 
 ### What is Storage?
 
