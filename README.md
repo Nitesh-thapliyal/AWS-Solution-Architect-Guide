@@ -195,6 +195,61 @@ Here I share my daily learning, Hope you will get help from it. If you find this
 </details>
 
 
+<details>
+<summary>ECR</summary>
+
+- **Elastic Container Registry(ECR)** provides a secure location to store and manage your docker images
+- This is a fully managed service, so you don't need to provision any infrastructure to allow you to create this registry of docker images
+- This allow developers to push,pull and manage their library of docker images in a central and secure location
+
+### Registry
+- The ECR registry allows you to host and store your docker images, as well as create image repositories
+
+- By default the URL for the registry is as follows:
+> https://**aws_account_id**.dkr.ecr.**region**.amazonaws.com
+
+- The account has both read and write access by default to any images you create within the registry and any repository
+- Access to your regustry and images can be controlled via **IAM** policies in addition to **registry policies**
+- Before your docker client can access your registry, it needs to be authenticated as an AWS user via an **Authorization token**
+
+### Authorization Token
+
+-  To begin the authoization process to communicate your docker client with your default registry, you can run the get-login command using AWS CLI
+> aws ecr get-login-password --region **region** --no-include-email
+
+- This will produce an output response which will be a docker login command
+> docker login -u AWS -p **password**
+> https://**aws_account_id**.dkr.ecr.**region**.amazonaws.com
+
+- This process produces an authorization token that can be used within the registry for 12 hours
+
+### Repository
+
+- These are objects within your registry that allow you to group together and secure different docker images
+- You can create multiple repositories with the registry allowing you to origanize and manage your docker images into different categories
+- Using policies from both IAM and repository policies you can assign set permissions to each repository
+
+## Repository Policy
+- There are a number of different IAM managed policies to help you control access to ECR:
+
+>AmazonEC2ContainerRegistoryFullAcess
+>AmazonEC2ContainerRegistoryPowerUser
+>AmazonEC2ContainerRegistoryReadOnly
+
+- Repository policies are resource based policies
+- You need to ensure you add a principal to the policy to determine who has access and what permission they have
+
+- For an AWS user to gain access to the registry they will require access to **ecr:GetAuthorizationToken** API call
+
+- Once they have this access,  repository policies can control what actions those users can perform on each of the repositories
+
+ ### Images
+ - Once you have configured your registry, repositories and security controls and authenticated your docker client with ECR, you can then begin storing your docker images in the required repositories
+
+ - To push an image into ECR, you can use the docker push command, and to retrieve an image you can use the docker pull command
+
+ </details>
+
 
 <details>
  <summary> Security Group </summary>
@@ -325,54 +380,3 @@ In *AWS* we have a service that provides *Object Storage As A Service* and the n
 </details>
 
 
-## ECR
-
-- **Elastic Container Registry(ECR)** provides a secure location to store and manage your docker images
-- This is a fully managed service, so you don't need to provision any infrastructure to allow you to create this registry of docker images
-- This allow developers to push,pull and manage their library of docker images in a central and secure location
-
-### Registry
-- The ECR registry allows you to host and store your docker images, as well as create image repositories
-
-- By default the URL for the registry is as follows:
-> https://**aws_account_id**.dkr.ecr.**region**.amazonaws.com
-
-- The account has both read and write access by default to any images you create within the registry and any repository
-- Access to your regustry and images can be controlled via **IAM** policies in addition to **registry policies**
-- Before your docker client can access your registry, it needs to be authenticated as an AWS user via an **Authorization token**
-
-### Authorization Token
-
--  To begin the authoization process to communicate your docker client with your default registry, you can run the get-login command using AWS CLI
-> aws ecr get-login-password --region **region** --no-include-email
-
-- This will produce an output response which will be a docker login command
-> docker login -u AWS -p **password**
-> https://**aws_account_id**.dkr.ecr.**region**.amazonaws.com
-
-- This process produces an authorization token that can be used within the registry for 12 hours
-
-### Repository
-
-- These are objects within your registry that allow you to group together and secure different docker images
-- You can create multiple repositories with the registry allowing you to origanize and manage your docker images into different categories
-- Using policies from both IAM and repository policies you can assign set permissions to each repository
-
-## Repository Policy
-- There are a number of different IAM managed policies to help you control access to ECR:
-
->AmazonEC2ContainerRegistoryFullAcess
->AmazonEC2ContainerRegistoryPowerUser
->AmazonEC2ContainerRegistoryReadOnly
-
-- Repository policies are resource based policies
-- You need to ensure you add a principal to the policy to determine who has access and what permission they have
-
-- For an AWS user to gain access to the registry they will require access to **ecr:GetAuthorizationToken** API call
-
-- Once they have this access,  repository policies can control what actions those users can perform on each of the repositories
-
- ### Images
- - Once you have configured your registry, repositories and security controls and authenticated your docker client with ECR, you can then begin storing your docker images in the required repositories
-
- - To push an image into ECR, you can use the docker push command, and to retrieve an image you can use the docker pull command
