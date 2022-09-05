@@ -142,6 +142,58 @@ Here I share my daily learning, Hope you will get help from it. If you find this
 </details>
 
 
+<details>
+<summary>ECS</summary>
+
+- ECS(EC2 Container Service) is a service that allows you to run Docker enabled applications packaged as container across a cluster of EC2 instance without requiring you to manage a complex and adminstratively heavy cluster management system
+
+- The cluster management system is abstracted with ECS service by passing that responsibily over to AWS, specifically through the use of **AWS Fargate**
+
+- With Amazon ECS there is no need to install any management or monitoring software for your cluster
+
+
+### AWS Fargate
+
+- AWS Fargate is an engine used to enable ECS to run containers without having to manage and provision instance and cluster for containers
+
+### Docker
+- Docker is a piece of software that allows you to automate the installation and distribution of application inside Linux Containers
+
+### Container
+- A Container holds everything an application needs to run from within its container package
+
+- They are decoupled from the operating system, making Container applications very portable
+
+
+> When launching ECS Cluster you have option of 2 different deployment modes:
+1. Fargate launch
+2. EC2 launch
+
+> Fargate launch
+- It requires you to specify the CPU and memory required, define networking and IAM policies, in addition to you having to package your application into containers
+
+
+> EC2 launch
+- You are responsible for patching and scaling your instance type and how many containrs should be in a cluster
+
+
+### Monitoring Containers
+
+- Monitoring is taken care of through the use of **Amazon CloudWatch**
+
+- Using CloudWatch you can easily create alarms based off these matrics, providing you notification of when specific events occur, such as a your cluster size scaling up or down
+
+### AMazon ECS Cluster
+
+- An Amazon ECS cluster is comprised of a collection of EC2 instances
+- Cluster act as a resourse pool, aggregating resourses such as CPU and memory
+- Clusters are dynamically scalable and multiple instance can be used
+- Cluster can only scale in a single region
+- Containers can be scheduled to be deployed across your cluster
+- Instance within the cluster also have a Docker daemon and an ECS agent
+
+</details>
+
 
 
 <details>
@@ -271,9 +323,5 @@ In *AWS* we have a service that provides *Object Storage As A Service* and the n
 **Empheral Storage Device**
 - [Comming Soon]
 </details>
-
-
-
-
 
 
