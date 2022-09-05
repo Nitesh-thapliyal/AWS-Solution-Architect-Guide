@@ -9,7 +9,7 @@ Here I share my daily learning, Hope you will get help from it. If you find this
  <h1>Compute</h1>
 <hr>
 
-- Comoute resources can be consider the brains and processing power required by applications and systems to cary out computational tasks via a series of instructions.
+- Compute resources can be consider the brains and processing power required by applications and systems to cary out computational tasks via a series of instructions.
 
 - It is closely related to common server component such as **RAM** and **CPU**
 
