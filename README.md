@@ -380,3 +380,19 @@ In *AWS* we have a service that provides *Object Storage As A Service* and the n
 </details>
 
 
+## EKS
+
+### Kubernetes:
+- Kubernetes is an Open-source container orchestration tool design to automate, deploy, scale and operate containerized applications
+
+- It can grow from tens, thousands, or even millions of containrs 
+
+- It is container-runtime agnostic
+
+
+#Reference:
+
+[Cloud Academy](https://cloudacademy.com)
+
+<img src="/Notes/cloudacademy.png">
+
