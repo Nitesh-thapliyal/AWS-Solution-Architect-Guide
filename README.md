@@ -252,6 +252,37 @@ Here I share my daily learning, Hope you will get help from it. If you find this
 
 
 <details>
+<summary> EKS<sumamry/>
+
+### Kubernetes:
+- Kubernetes is an Open-source container orchestration tool design to automate, deploy, scale and operate containerized applications
+
+- It can grow from tens, thousands, or even millions of containrs 
+
+- It is container-runtime agnostic
+
+
+---
+- AWS provide a managed service allowing you to run Kubernetes across your AWS infrastructure without having to take care of provisioning and running the kubernetes management infrastructure in what's referred to as the **control plane**
+
+- You only need to provision and maintain the worker nodes
+
+### Kubernetes Control Plane
+- There are a number of different components that make up the control plane and these include a number of different API's, the Kubelet process and the Kubernetes Master
+- The control plane schedules containers onto nodes
+- The control plane also tracks the state of all kubernetes objects by continually monitoring the objects
+- In EKS, AWS is responsible for provisioning, scaling and managing the control plane, and they do this by utilizing multiple availability zones for additional resilience
+
+### Worker Nodes
+> Kubernetes cluster are composed of nodes
+- A node is a worker machine in kubernetes. It run as an on-demand EC2 instance and include software to run containers
+- For each node created, a specific AMI is used, which also ensures Docker and the Kubelet is installed for security controls
+- Once the worker nodes are provisioned they can then connect to EKS using an endpoint
+
+<details/>
+
+
+<details>
  <summary> Security Group </summary>
 
 
@@ -379,15 +410,6 @@ In *AWS* we have a service that provides *Object Storage As A Service* and the n
 - [Comming Soon]
 </details>
 
-
-## EKS
-
-### Kubernetes:
-- Kubernetes is an Open-source container orchestration tool design to automate, deploy, scale and operate containerized applications
-
-- It can grow from tens, thousands, or even millions of containrs 
-
-- It is container-runtime agnostic
 
 
 # Reference:
