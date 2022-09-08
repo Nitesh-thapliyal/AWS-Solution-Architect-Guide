@@ -252,7 +252,7 @@ Here I share my daily learning, Hope you will get help from it. If you find this
 
 
 <details>
-<summary> EKS<sumamry/>
+<summary> EKS</summary>
 
 ### Kubernetes:
 - Kubernetes is an Open-source container orchestration tool design to automate, deploy, scale and operate containerized applications
@@ -279,7 +279,7 @@ Here I share my daily learning, Hope you will get help from it. If you find this
 - For each node created, a specific AMI is used, which also ensures Docker and the Kubelet is installed for security controls
 - Once the worker nodes are provisioned they can then connect to EKS using an endpoint
 
-<details/>
+</details>
 
 
 <details>
