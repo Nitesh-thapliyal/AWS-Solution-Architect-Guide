@@ -283,6 +283,88 @@ Here I share my daily learning, Hope you will get help from it. If you find this
 
 
 <details>
+<summary>AWS Elastic Beanstalk</summary>
+
+- AWS Elastic BeanStalk is an AWS managed service that takes your uploaded code of your web application code and automatically provisions and deploys the required resources within AWS to make the web applicaiton operational
+
+- The resources inlcude EC2, Auto Scaling, application health monitoring and Elastic Load Balancing, in addition to capacity provisioning
+
+- It is an ideal service for engineers who may not have the familiarity or the necessary skills within AWS to deploy, provision, monitor and scale the correct environment to run the developed applications instead this responsibilty is passed on to the AWS Elastic BeansStalk to deploy the correct infrastructure to run the uploaded code
+
+- In elastic beanstalk you can continue to support and maintain the environment as you would with a custom built environment
+
+- You can perform some maintenance taks from the Elastic Beanstalk dashboard itself
+
+- Elastic Beanstalk is able to operate with a variety of platforms and programming languages making it a flexible service for your DevOps team
+
+> The service itself is free to use
+- There is no cost associated with Elastic Beanstalk, however, any resources that are created on your application's bealf, such as EC2 instances, you will be charged for as per the standard pricing policies at the time of deployment
+
+### Elastic Beanstalk Core Components:
+> 1. Application Version
+- An application version is a very specific reference to a section of deployable code.
+- The application version will point typically to S3, simple storage service to where the deployable code may reside
+
+> 2. Evironment
+- An environment refers to an application version that has been deployed on AWS resources, which are configured and provisioned by AWS Elastic Beanstalk
+- At this stage, the application is deployed as a solution and becomes operational within your environment
+- The environment is comprised af All the resources created by Elastic Beanstalk and not just an EC2 instance with your uploaded code
+
+> 3. Environment Configuration
+- This is a collection of parameters and settings that dictate how an environment will have its resources provisioned by Elastic Beanstalk and how these resources will behave
+
+> 4. Environment Tier
+
+AWS Elastic Beanstalk has two types of envornment tiers to support different types of web application:
+- If the application manages and handles HTTP request then the app will be run in **Web server environment**
+
+- If the application does not process HTTP requests, and instead perhaps pulls data from an SQS queue, then it would run in a **worker environment**
+
+> 5. Configuration Template
+- This is the template that provides the baseline for creating a new, unique, environment configuration
+
+> 6. Platform
+- Platform is a culminatin of components in which you can build your application upon using Elastic Beanstalk
+- These comprise of the OS of the instance, the programming language, the server type(web or application) and components of Elastic Beanstalk itself, and as a whole can be defined as a platform.
+
+> 7. Applications
+- An applications is a collection of different elements, such as environments, environment configurations and application version
+
+- You can deploy your application in two differnt envionments:
+1. Web server envonment
+2. Worker environment
+
+##### Web server environment
+- This is typically used for standard web applications that operate and serve request over HTTP port 80
+>Route 53
+Elastic Load Balancer
+Auto Scaling
+EC2
+Security Groups
+
+##### Worker Environment
+- It is used by application that will have a back end processing task, that will interact with AWS SQS
+>SQS Queue
+IAM Service Role
+Auto Scaling
+EC2
+
+### Elastic Beanstalk Workflow:
+Elastic Beanstalk operates a very simple workflow process for your application deployment and ongoing management
+
+```mermaid
+  flowchart LR
+  Create_Application --> Upload_Version 
+
+  Manage_Environment-->|Update_version|Upload_Version-->Launch_Environment-->Manage_Environment 
+  Upload_Version-->|Deploy_New_Version|Manage_Environment
+
+```
+</details>
+
+
+
+<details>
  <summary> Security Group </summary>
 
 
