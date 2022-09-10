@@ -362,6 +362,46 @@ Elastic Beanstalk operates a very simple workflow process for your application d
 ```
 </details>
 
+<details>
+<summary> AWS Batch </summary>
+- AWS Batch is used to manage and run batch computing workloads within AWS
+
+> Batch Computing: 
+- Batch Computing is primarily used in specialist use cases which require a vast amount of compute power across a cluster of compute resources to complete batch processing executing a series of tasks
+- With AWS Batch many of these contraints , adminstration activities and maintenance tasks are removed
+- You can seamlessly create a cluster of compute resources which is highly scalable taking advantage of the elasticity of AWS coping with any level of batch processing whilst optimizing the distribution of the workloads
+- All provisioning, monotoring, maintenance and management of the cluster is taken care of by AWS
+
+### AWS Batch Components:
+There are effectively five components that make up the AWS Batch service which will help you to start using the service:
+> Jobs
+- A Job is classed as the unit of work that is to be run by AWS Batch. A job can be an executable file, an application within an ECS Cluster or a shell script
+- Jobs run on EC2 instances as a containerized application
+- Jobs can have different states such as 'Submitted', 'Pending', 'Running', 'Failed', etc.
+
+> Job Definitions
+- These define specific parameter for the jobs themselves and dictate how the job will run and with what configuration
+
+> Job Queues
+- Jobs that are scheduled are placed into a Job Queue until they run
+- You can have multiple queues with different priorities
+- On demand and spot instances are supported
+- AWS Batch can bid on your behalf for spot instances
+
+> Job Scheduling
+- The Job Scheduling takes care of when a Job should be run and from which Compute Environment
+- Typically it will operate on a first in first out basis
+- It ensures that higher priority queues are run first
+
+> Compute Environments
+- These are the environments containing the compute resources to carry out the job
+
+- Managed Environment: The service will handle provisioning, Scaling and termination of compute instance. This envionment is created as an Amazon ECs Cluster
+- Unmanged Environment: These enviroenments are provisioned, managed and maintained by you. It gives greater customization but requires greater administration and maintenance
+
+
+If you have a requirement to run multiple jobs in parallel using Batch comuting for example to analyze financial risk models, perform media transcoding or engineering simulation then AWS Batch would be a perfect solution
+</details>
 
 
 <details>
@@ -491,7 +531,6 @@ In *AWS* we have a service that provides *Object Storage As A Service* and the n
 **Empheral Storage Device**
 - [Comming Soon]
 </details>
-
 
 
 # Reference:
