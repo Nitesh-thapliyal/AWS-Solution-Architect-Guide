@@ -498,5 +498,5 @@ In *AWS* we have a service that provides *Object Storage As A Service* and the n
 
 [Cloud Academy](https://cloudacademy.com)
 
-<img src="/Notes/cloudacademy.png">
+<img src="src/cloudacademy.png">
 
