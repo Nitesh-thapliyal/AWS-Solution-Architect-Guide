@@ -1,5 +1,5 @@
 ## AWS Solution Architect  
-<img src = "Notes/aws-csa-associate.png">
+<img src = "src/aws-csa-associate.png">
 
 Learn **AWS** with me 🤝
 
